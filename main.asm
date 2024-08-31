@@ -10,10 +10,10 @@ main:
     mov  rdx, rax                                 
     mov  rsi, rdi                                 
     mov  rdi, 1                                   ; stdout
-    mov  rax, 1                                   ; sys_write
+    mov  rax, 1                                   
     syscall
     xor  rdi, rdi                                 ; exit code 0
-    mov  rax, 60                                  ; sys_exit
+    mov  rax, 60                                  
     syscall
 
 segment readable writable
