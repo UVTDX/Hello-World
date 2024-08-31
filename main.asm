@@ -6,7 +6,7 @@ entry main
 
 main:
     lea  rdi, [msg]                               ; msg address to rdi
-    mov  rax, 14                                  
+    mov  rax, 15                                  
     mov  rdx, rax                                 
     mov  rsi, rdi                                 
     mov  rdi, 1                                   ; stdout
@@ -18,4 +18,4 @@ main:
 
 segment readable writable
 
-msg  db 'Hello world!', 10, 0
+msg  db 'Hi, Observer!', 10, 0
