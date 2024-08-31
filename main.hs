@@ -1,3 +1,2 @@
--- random commit material
 main :: IO ()
-main = putStrLn "Hi, Observer!"
+main = putStrLn . map reverseStrangeTransform . weirdString $ "Ifmmp-!Xpsme""
