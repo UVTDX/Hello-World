@@ -12,6 +12,3 @@ reverseStrangeTransform c = toEnum (fromEnum c - 1)
 weirdString :: String -> String
 weirdString = map strangeTransform
 
--- Main function with more obfuscation.
-main :: IO ()
-main = putStrLn . map reverseStrangeTransform . weirdString $ "Hello, World!"
